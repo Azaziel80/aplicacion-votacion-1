@@ -1,0 +1,138 @@
+:root{
+    --verdelimon: #EBEE35;
+    --verdelimonOsc: #B4B703;
+    --gris: #D1D0CF ;
+    --azul: #2BB8E5;
+    --azuloscuro: #0C3D4D;
+}
+/*funetes locales*/
+@font-face{
+    font-family: 'Titles';
+    src: url('../fonts/LatoLatin-Black.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LatoLatin-Bold';
+    src: url('../fonts/LatoLatin-Bold.woff2') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LatoLatin-Light';
+    src: url('../fonts/LatoLatin-Light.woff2') format('truetype');
+}
+/* header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Va a tener un tamaño caja o borde - tiene mas flexibilidad*/
+}
+body{
+    background: var(--fonm);
+    font-family: 'Open Sans', 'LatoLatin-Bold';
+}
+header{
+    padding: 0;
+    background-color: #EBEE35;
+}
+/*ancho pagina*/
+.container {
+    width: 100%;
+    margin: auto;
+}
+/*aplicar pagina*/
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container img{
+    width: 100px;
+    height: 100px;
+}
+header .container h1{
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 40px; 
+}
+header .container h3{
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 30px; 
+    text-align: center;
+}
+/*mitad*/
+section {
+    background-color: var(--azul);
+}
+section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+section .container form{
+    background-color: var(--gris);
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    margin: 90px;
+    border-radius: 4%;
+}
+section .container form label{
+    margin: 0 5px 0 5px;
+    float: left;
+    text-align: center;
+    color: var(--azuloscuro);
+    font-size: 18px; 
+}
+section .container form .form-control{
+    padding-bottom: 10px;
+
+}
+section .container input{
+    margin: 15px 0px;
+    align-items: space-between;
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+}
+section .container form .form-control{
+    padding-bottom: 10px;
+}
+
+
+/*footer*/
+footer {
+    margin-top: 0px;
+    text-align: center;
+    background-color: var(--verdelimon);
+    color: var(--azuloscuro);
+    padding: 20px;
+}
+.nav {
+    list-style: none;
+    padding: 0;
+    background-color: var(--verdelimon);
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.nav li a{
+    text-decoration: none;
+    color: var(--azuloscuro);
+    padding: 20px;
+    display: block;
+}
+.nav li{
+    display: inline-block;
+    text-align: center;
+}
+.nav li a:hover{
+    background-color: var(--verdelimonOsc);
+    color: var(--gris);
+}

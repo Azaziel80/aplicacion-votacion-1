@@ -1,0 +1,176 @@
+:root{
+    --verdelimon: #EBEE35;
+    --gris: #D1D0CF ;
+    --azul: #2BB8E5;
+    --azuloscuro: #0C3D4D;
+    --azulclaro:  #077ACF;
+}
+/*funetes locales*/
+@font-face{
+    font-family: 'Titles';
+    src: url('../fonts/LatoLatin-Black.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LatoLatin-Bold';
+    src: url('../fonts/LatoLatin-Bold.woff2') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LatoLatin-Light';
+    src: url('../fonts/LatoLatin-Light.woff2') format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Va a tener un tamaño caja o borde - tiene mas flexibilidad*/
+}
+body{
+    background: var(--fonm);
+    font-family: 'Open Sans', 'LatoLatin-Bold';
+}
+header{
+    background-color: #EBEE35;
+    padding: 15px 50px;
+}
+/*ancho pagina*/
+.container {
+    width: 100%;
+    margin: auto;
+}
+/*aplicar pagina*/
+header .container{
+    display: flex;
+    align-items: center;
+    
+}
+header .container img{
+    width: 100px;
+    height: 100px;
+}
+header .container h1{
+    margin-left: 10px;
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 40px; 
+    text-align: left;
+}
+header .container h3{
+    margin-left: 10px;
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 30px; 
+    text-align: left;
+}
+header .container .usuario{
+    margin-left: 300px;
+}
+header .container h4{
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 18px; 
+    text-align: right;
+}
+/*mitad*/
+#cajas {
+    background-color: var(--azul);
+}
+
+#cajas .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+/*contendores fotos*/
+#cajas{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#cajas .caja{
+    margin: 50px 30px 0px 5px;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(238, 237, 237);
+    
+}
+#cajas .container img{
+    width: 120px;
+    height: 180px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+/*contendcor1*/
+#cajas .container .container1{
+    margin: 15px;
+    width: 650px;
+    height: 400px;
+    background-color: var(--azulclaro);
+    align-items: center;
+
+    /*display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;*/
+}
+#cajas .container .container1 h2{
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 18px; 
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 15px;
+}
+#cajas .container .container2{
+    margin: 15px;
+    width: 650px;
+    height: 400px;
+    background-color: var(--verdelimon);
+    /*display: flex;
+    justify-content: center; 
+    align-items: center; */
+}
+.cajap{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#cajas .container .container2 h2{
+    font-family: 'LatoLatin-Black', 'Titles';  /*Sacado de internet (vinculo) -- Sacado de La creada en font-face*/
+    font-weight: normal;
+    color: var(--azuloscuro);
+    font-size: 18px; 
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #000;
+    margin-top: 15px;
+}
+
+
+
+
+/*footer*/
+footer {
+    margin-top: 0px;
+    text-align: center;
+    background-color: var(--verdelimon);
+    color: var(--azuloscuro);
+    padding: 20px;
+}
+
